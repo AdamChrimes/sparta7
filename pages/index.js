@@ -23,7 +23,7 @@ export default function Home() {
 
             <h1 className={styles.title}>Sparta7 - Coaching consultation</h1>
 
-          <form action="/thanks" name="consultation" method="POST" data-netlify="true">
+          <form name="consultation" method="POST" data-netlify="true">
 
             <div className="form-group">
               <label htmlFor="name">What is your name?</label>
