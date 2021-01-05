@@ -25,6 +25,8 @@ export default function Home() {
 
           <form name="consultation" method="POST" data-netlify="true">
 
+            <input type="hidden" name="form-name" value="consultation" />
+
             <div className="form-group">
               <label htmlFor="name">What is your name?</label>
               <input type="text" className="form-control" id="name" />
