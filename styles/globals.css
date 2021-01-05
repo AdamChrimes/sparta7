@@ -1,9 +1,14 @@
 html,
 body {
+  background-color: #f0f4f5;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #f0f4f5 !important;
 }
 
 a {
@@ -13,4 +18,29 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navbar {
+  background-color: #000;
+  border-bottom: 3px solid #FFED00;
+  padding-top: 6px;
+  padding-bottom: 16px !important;
+}
+
+.navbar-brand:focus {
+  outline: 2px solid #FFED00;
+}
+
+form {
+  margin-top: 32px;
+}
+
+.form-control {
+  border: 1px solid #000 !important;
+  border-radius: 0 !important;
 }
