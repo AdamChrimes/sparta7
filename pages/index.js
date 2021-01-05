@@ -9,10 +9,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-          <img src="/logo-300x300.png" width="140" height="43" alt="" />
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <a className="navbar-brand" href="/">
+            <img src="/logo-300x300.png" width="140" height="43" alt="" />
           </a>
         </div>
       </nav>
