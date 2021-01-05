@@ -1,11 +1,20 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setSuccess(true);
+    }
+  }, []);
+
   return (
       <>
       <Head>
-        <title>Sparta7</title>
+        <title>Coaching consultation - Sparta7</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -21,11 +30,16 @@ export default function Home() {
 
         <main className="main">
 
-          <h1 className={styles.title}>Your Sparta7 journey starts here</h1>
+          <h1 className={styles.title}>Sparta7 - Coaching consultation</h1>
 
-          <form name="contact" method="POST" action="/?success=true" data-netlify="true">
+          {success && (
+            <div className="alert alert-success" role="alert">
+              Thanks for getting in touch - your Sparta7 journey starts here!
+            </div>
+          )}
 
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="consultation" method="POST" action="/?success=true" data-netlify="true">
+            <input type="hidden" name="form-name" value="consultation" />
 
             <div className="form-group">
               <label htmlFor="name">What is your name?</label>
@@ -81,7 +95,7 @@ export default function Home() {
               <input type="text" className="form-control" id="telephone" name="telephone"/>
             </div>
 
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-success">Complete application</button>
 
           </form>
 
