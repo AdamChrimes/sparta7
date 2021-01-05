@@ -16,6 +16,18 @@ export default function Home() {
       <Head>
         <title>Coaching consultation - Sparta7</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLWD7G5FMK"></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-SLWD7G5FMK');
+              `,
+          }}
+        />
       </Head>
 
       <nav className="navbar navbar-expand-lg">
@@ -95,7 +107,7 @@ export default function Home() {
               <input type="text" className="form-control" id="telephone" name="telephone" required/>
             </div>
 
-            <button type="submit" class="btn btn-success">Complete application</button>
+            <button type="submit" className="btn btn-success">Complete application</button>
 
           </form>
 
