@@ -39,11 +39,11 @@ export default function Home() {
           )}
 
           <form name="consultation" method="POST" action="/?success=true" data-netlify="true">
-            <input type="hidden" name="form-name" value="consultation" />
+            <input type="hidden" name="form-name" value="consultation" required/>
 
             <div className="form-group">
               <label htmlFor="name">What is your name?</label>
-              <input type="text" className="form-control" id="name" name="name"/>
+              <input type="text" className="form-control" id="name" name="name" required />
             </div>
 
             <div className="form-group">
@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="form-group">
               <label htmlFor="telephone">What is your phone number for a FREE consultation? (Include area code)</label>
-              <input type="text" className="form-control" id="telephone" name="telephone"/>
+              <input type="text" className="form-control" id="telephone" name="telephone" required/>
             </div>
 
             <button type="submit" class="btn btn-success">Complete application</button>
