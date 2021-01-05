@@ -21,25 +21,25 @@ export default function Home() {
 
         <main className="main">
 
-            <h1 className={styles.title}>Sparta7 - Coaching consultation</h1>
+          <h1 className={styles.title}>Your Sparta7 journey starts here</h1>
 
-          <form name="consultation" method="POST" data-netlify="true">
+          <form name="contact" method="POST" action="/?success=true" data-netlify="true">
 
-            <input type="hidden" name="form-name" value="consultation" />
+            <input type="hidden" name="form-name" value="contact" />
 
             <div className="form-group">
               <label htmlFor="name">What is your name?</label>
-              <input type="text" className="form-control" id="name" />
+              <input type="text" className="form-control" id="name" name="name"/>
             </div>
 
             <div className="form-group">
               <label htmlFor="goal">What is your primary fitness goal?</label>
-              <input type="text" className="form-control" id="goal" />
+              <input type="text" className="form-control" id="goal" name="goal" />
             </div>
 
             <div className="form-group">
               <label htmlFor="ready">Are you ready to commit to your fitness goals right now? </label>
-              <select className="form-control" id="ready">
+              <select className="form-control" id="ready" name="ready">
                 <option value="">Please select</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -48,12 +48,12 @@ export default function Home() {
 
             <div className="form-group">
               <label htmlFor="excuse">What is the biggest thing holding you back from achieving your goals?</label>
-              <textarea className="form-control" id="excuse" rows="3"></textarea>
+              <textarea className="form-control" id="excuse" name="excuse" rows="3"></textarea>
             </div>
 
             <div className="form-group">
               <label htmlFor="approach">How are you approaching this application call?</label>
-              <select className="form-control" id="approach">
+              <select className="form-control" id="approach" name="approach">
                 <option value="">Please select</option>
                 <option value="I have less then £250 to spend, I just want something basic">I have less then £250 to spend, I just want something basic</option>
                 <option value="My budget is tight but if the programme guarantees results, I’m committed">My budget is tight but if the programme guarantees results, I’m committed</option>
@@ -63,7 +63,7 @@ export default function Home() {
 
             <div className="form-group">
               <label htmlFor="time">Pick a time within the next 24 hours for FREE 15 minute consultation</label>
-              <select className="form-control" id="time">
+              <select className="form-control" id="time" name="time">
                 <option value="">Please select</option>
                 <option value="10AM">10AM (GMT)</option>
                 <option value="11AM">11AM (GMT)</option>
@@ -78,7 +78,7 @@ export default function Home() {
 
             <div className="form-group">
               <label htmlFor="telephone">What is your phone number for a FREE consultation? (Include area code)</label>
-              <input type="text" className="form-control" id="telephone" />
+              <input type="text" className="form-control" id="telephone" name="telephone"/>
             </div>
 
             <button type="submit" className="btn btn-primary">Submit</button>
