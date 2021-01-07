@@ -32,7 +32,7 @@ main {
   background-color: #000;
   border-bottom: 3px solid #FFED00;
   padding-top: 6px;
-  padding-bottom: 16px !important;
+  padding-bottom: 12px !important;
 }
 
 .navbar-brand:focus {
@@ -50,4 +50,22 @@ form {
 
 .alert {
   margin-top: 1rem !important;
+}
+
+
+.navbar-brand {
+  display: block;
+}
+
+.navbar-sparta7-logo {
+  border: 0;
+  width: 140px;
+  height: 62px;
+}
+
+.navbar-sparta7-logo .cls-1{fill:#fff} 
+
+.sparta7-logo {
+  width: 280px;
+  height: 124px;
 }
