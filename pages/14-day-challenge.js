@@ -74,6 +74,11 @@ export default function Home() {
             </div>
 
             <div className="form-group">
+              <label htmlFor="excuse">What is the biggest thing holding you back from achieving your goals?</label>
+              <textarea className="form-control" id="excuse" name="excuse" rows="3"></textarea>
+            </div>
+
+            <div className="form-group">
               <label htmlFor="gym">Will you be working out at a gym?</label>
               <select className="form-control" id="gym" name="gym">
                 <option value="">Please select</option>
