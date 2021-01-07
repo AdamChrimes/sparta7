@@ -54,7 +54,7 @@ export default function Home() {
             <input type="hidden" name="form-name" value="challenge" />
 
             <div className="form-group">
-              <label htmlFor="name">What is your name on Facebook?</label>
+              <label htmlFor="facebook-name">What is your name on Facebook?</label>
               <input type="text" className="form-control" id="facebook-name" name="facebook-name" required />
             </div>
 
@@ -71,6 +71,20 @@ export default function Home() {
             <div className="form-group">
               <label htmlFor="goal">What is your fitness goal?</label>
               <textarea className="form-control" id="goal" name="goal" rows="3"></textarea>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="gym">Will you be working out at a gym?</label>
+              <select className="form-control" id="gym" name="gym">
+                <option value="">Please select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="equipment">What exercise equipment do you have at home?</label>
+              <textarea className="form-control" id="equipment" name="equipment" rows="3"></textarea>
             </div>
 
             <button type="submit" className="btn btn-success">Sign up</button>
