@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           )}
 
-          <form name="consultation" method="POST" action="/?success=true" data-netlify="true">
+          <form name="consultation" method="POST" action="/coaching-consultation?success=true" data-netlify="true">
             <input type="hidden" name="form-name" value="consultation" />
 
             <div className="form-group">

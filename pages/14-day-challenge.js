@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           )}
 
-          <form name="challenge" method="POST" action="/?success=true" data-netlify="true">
+          <form name="challenge" method="POST" action="/14-day-challenge?success=true" data-netlify="true">
             <input type="hidden" name="form-name" value="challenge" />
 
             <div className="form-group">
